@@ -1,6 +1,11 @@
 package com.easy.day2;
 
 public class QuickSort {
+    //F8往下跳，F7会进入方法内部
+    public static void main(String[] args) {
+        int[] arr={9,2,4,5,3,2};
+        quickSort(arr);
+    }
     public static void quickSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
@@ -34,6 +39,7 @@ public class QuickSort {
         return new int[] { less + 1, more };
     }
 
+    //swap函数交换的是下标
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
