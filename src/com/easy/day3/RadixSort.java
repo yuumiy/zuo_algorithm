@@ -45,4 +45,8 @@ public class RadixSort {
             }
         }
     }
+
+    public static int getDigit(int x, int d) {
+        return ((x / ((int) Math.pow(10, d - 1))) % 10);
+    }
 }
